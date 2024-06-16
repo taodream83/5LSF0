@@ -7,7 +7,7 @@ K=4;           % Convolutional encoder constraint length
 poly=[13,15];   % [5,7];   % Set of polynomials defining convolutional encoder
 trellis=poly2trellis(K,poly);                        % Trellis structure
 r=size(poly,1)/size(poly,2);    % Convolutional code rate 
-tb=1e5;                         % Trace-back length
+tb=1e5;                         % Decoding window
 DecType='unquant';
 DecMode='trunc';
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

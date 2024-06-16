@@ -84,7 +84,5 @@ end
 
 % Function computing gamma branch metrics under Gaussian assumption 
 function gamma=Gamma(yin,u,N0)
-gamma=-abs(yin-u).^2/(N0)-log(sqrt(pi*N0)); 
-%gamma=-abs(yin-u).^2/(2*N0); 
-
+gamma=-abs(yin-u).^2/(N0); 
 end
